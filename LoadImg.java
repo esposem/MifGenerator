@@ -34,6 +34,7 @@ public class LoadImg
         }
         catch (Exception e)
         {
+
         }
 
     }
