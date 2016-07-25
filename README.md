@@ -2,8 +2,9 @@
 # Created by Emanuele Giuseppe Esposito on 07/21/2016
 
 This tool creates an Altera .mif (Memory Initialization File ) from an image file (.png,jpeg,.jpg).
-More informations about .mif extension can be found here
-http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm
+More informations about .mif extension can be found [here](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
+
+[http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
 
 The file generated can be read from any text editor, and  will have as address radix and data radix UNS.
 
@@ -16,20 +17,21 @@ HOW TO RUN.
 **YOU MUST HAVE JAVA JDK 6+ INSTALLED.**
 
 If you want to create a new mif file:
-1) Unzip these files.
 
-2) With your terminal, go to the folder path
+ 1. Unzip these files.
 
-3) write ```java MifGenerator image_name.extension image_width image_height number_word q-output```
+ 2. With your terminal, go to the folder path
 
-4) If you do not understand these parameter, you can see them in Quartus 2 by going on Tools -> MegaWizard Plug-In Manager
-   -> Next (choose your options) -> Next (choose your megafunction and give a name to the ram/rom) -> (here).
-   If you forget the order or not sure on what to insert, you can write (going with the terminal in the folder path)
-   java MifGenerator -help
+ 3. write ```java MifGenerator image_name.extension image_width image_height number_word q-output```
 
-5) The output will be a file generated with called the same nome of the image .mif .
+ 4. If you do not understand these parameter, you can see them in Quartus 2 by going on Tools -> MegaWizard Plug-In Manager
+    -> Next (choose your options) -> Next (choose your megafunction and give a name to the ram/rom) -> (here).
+    If you forget the order or not sure on what to insert, you can write (going with the terminal in the folder path)
+    ```java MifGenerator -help```
 
-6) Enjoy
+ 5. The output will be a file generated with called the same nome of the image .mif .
+
+ 6. Enjoy
 
 PS If you are really lazy, and don’t want to set every time these number, there is a bash script called run that you can edit in order to automatically get the size of the memory or get the same memory size and word parameters.
 
@@ -42,13 +44,14 @@ It only requires as argument an image file. For example
 The default values for this script are ```160 120 32768 8 ```(What I used to generate my 160 x 120 image to show in my 640 x 480 screen.)
 
 If you want to modify a mif file to add another image in its free memory words:
-1) go to step 1 and 2
 
-2) write ```java mif_file_name.mif``` (this is your mif file).
+ 1. go to step 1 and 2
 
-3) Then you will be asked what image do you want to insert and on which size
+ 2. write ```java mif_file_name.mif``` (this is your mif file).
 
-4) Enjoy the resulting mif file called TwoImages.mif
+ 3. Then you will be asked what image do you want to insert and on which size
+
+ 4. Enjoy the resulting mif file called TwoImages.mif
 
 
 
