@@ -25,7 +25,7 @@ If you want to create a new mif file:
  3. write ```java MifGenerator image_name.extension image_width image_height number_word q-output```
 
  4. If you do not understand these parameter, you can see them in Quartus 2 by going on Tools -> MegaWizard Plug-In Manager
-    -> Next (choose your options) -> Next (choose your megafunction and give a name to the ram/rom) -> (here).
+    -> Next (choose your options) -> Next (choose your megafunction and give a name to the ram/rom)  -> (here).
     If you forget the order or not sure on what to insert, you can write (going with the terminal in the folder path)
     ```java MifGenerator -help```
 
