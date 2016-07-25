@@ -134,7 +134,7 @@ public class MifGenerator {
                 Runtime.getRuntime().exec("rm color-Greyscale.txt");
                 Runtime.getRuntime().exec("rm resized" + result_type.toUpperCase() + "." + result_type.toLowerCase());
 
-                // read old mif, add the new stuff to the mif, add an arg to choose to delete the producted files, ROM 2 ports
+                // TODO: add an arg to choose to delete the producted files
             }
             catch(IOException e)
             {
