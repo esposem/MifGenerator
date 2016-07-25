@@ -59,7 +59,7 @@ public class MifAdder {
         try{
 
             PrintWriter writer;
-            writer = new PrintWriter("TwoImages.mif", "UTF-8");
+            writer = new PrintWriter("MultipleImages.mif", "UTF-8");
             int j = 0;
             while (!(oldword.get(j).equals("BEGIN"))){
                 writer.println(oldword.get(j));
@@ -81,6 +81,7 @@ public class MifAdder {
                     k ++;
                 }
                 if (oldmifsize < MEM_SIZE) {
+                    oldmifsize++;
                     writer.println("[" + oldmifsize + ".." + (MEM_SIZE - 1) + "] : " + 0 + ";");
                     System.out.println("You still have "+ (MEM_SIZE - oldmifsize) + " free words!");
                 }

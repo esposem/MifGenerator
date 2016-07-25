@@ -138,7 +138,7 @@ public class MifGenerator {
             }
             catch(IOException e)
             {
-                System.out.println("Wrong or inesistent file! ");
+                System.out.println("Wrong or inesistent image or mif file! ");
 
             }
             catch (ArrayIndexOutOfBoundsException a){

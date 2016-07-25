@@ -10,8 +10,8 @@ The file generated can be read from any text editor, and  will have as address r
 
 HOW TO RUN.
 
- By default, any image should be in this folder in order to be read, but if you want to use any image in other directories, just remember not to add the first slash. 
- 
+ By default, any image should be in this folder in order to be read, but if you want to use any image in other directories, just remember not to add the first slash.
+
  For example, java MifGenerator EXAMPLE/linux_pengui.mif
 
 **YOU MUST HAVE JAVA JDK 6+ INSTALLED.**
@@ -51,7 +51,7 @@ If you want to modify a mif file to add another image in its free memory words:
 
  3. Then you will be asked what image do you want to insert and on which size
 
- 4. Enjoy the resulting mif file called TwoImages.mif
+ 4. Enjoy the resulting mif file called MultipleImages.mif
 
 
 

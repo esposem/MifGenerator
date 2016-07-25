@@ -1,6 +1,6 @@
 -- Image used: EXAMPLE/linux_penguin.png
 DEPTH = 32768;
-WIDTH = 3;
+WIDTH = 8;
 ADDRESS_RADIX = UNS;
 DATA_RADIX = UNS;
 CONTENT
@@ -19205,6 +19205,7 @@ BEGIN
 19197 : 0;
 19198 : 0;
 19199 : 0;
+--finished
 [19200..32767] : 0;
 
 END;
