@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -71,6 +73,7 @@ public class LoadImg
     public void imageFormat(int width, int height){
 
         try {
+
             BufferedImage resizeImageJpg = resizeImage(image, imgtype, width, height);
             ImageIO.write(resizeImageJpg, type , new File("resized" + type.toUpperCase() + "." + type.toLowerCase()));
         }
@@ -78,6 +81,7 @@ public class LoadImg
             System.out.println("Exception creating the resized image " + type + " " + e);
         }
     }
+
     private static BufferedImage resizeImage(BufferedImage originalImage, int type,int IMG_WIDTH, int IMG_HEIGHT){
         BufferedImage resizedImage = new BufferedImage(IMG_WIDTH, IMG_HEIGHT, type);
         Graphics2D g = resizedImage.createGraphics();

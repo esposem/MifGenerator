@@ -143,7 +143,7 @@ public class MifGenerator {
             }
             catch (ArrayIndexOutOfBoundsException a){
                 if (a.getMessage().equals("Message")){
-                    System.out.println("Not enough memory to hold both images!");
+                    System.out.println("Not enough memory to hold all the images!");
                 }
                 else{
                     System.out.println("Add also image size or 0 0");

@@ -81,6 +81,7 @@ public class MifAdder {
                     k ++;
                 }
                 if (oldmifsize < MEM_SIZE) {
+                  writer.println("--finished");
                     oldmifsize++;
                     writer.println("[" + oldmifsize + ".." + (MEM_SIZE - 1) + "] : " + 0 + ";");
                     System.out.println("You still have "+ (MEM_SIZE - oldmifsize) + " free words!");
