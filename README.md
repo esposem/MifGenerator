@@ -42,7 +42,9 @@ If you want to modify a mif file to add another image in its free memory words:
 
  3. Then you will be asked what image do you want to insert and on which size
 
- 4. Enjoy the resulting mif file called MultipleImages.mif
+ 4. Insert a name for the resulting mif file
+ 
+ 5.Enjoy the resulting mif file
 
 
 
@@ -59,4 +61,5 @@ If you want to modify a mif file to add another image in its free memory words:
 
 
 Any help/correction of this code is appreciated. If you want to contact me, send me a mail.
+
 I am not responsible of any use you will do of this tool.

@@ -78,6 +78,7 @@ public class MifGenerator {
         catch (ArrayIndexOutOfBoundsException a){
             if (a.getMessage().equals("Too Large")){
                 System.out.println("Not enough memory specified.");
+                System.out.println("Process stopped");
             }
             else {
                 System.out.println("File  " + filename + " empty");
@@ -123,7 +124,12 @@ public class MifGenerator {
 
                     MifGenerator mif = new MifGenerator(pwd + "/", "color-Greyscale.txt");
                     String[] words_to_add = mif.getWords(); // array with all numbers to add
-                    oldmif.CreateNewFile(words_to_add);
+                    System.out.println("Enter the name of the mif file you will create:");
+
+                    BufferedReader bufferRead2 = new BufferedReader(new InputStreamReader(System.in));
+                    String s2 = bufferRead2.readLine();
+                    String[] name = s2.split(" ");
+                    oldmif.CreateNewFile(words_to_add, name[0]);
                 }
                 catch(IOException e)
                 {
@@ -141,7 +147,7 @@ public class MifGenerator {
                 }
                 catch(Exception q){
                     System.out.println("No such image found! Remember to add also the extension");
-                    
+
                 }
             }
             else {
@@ -245,7 +251,6 @@ public class MifGenerator {
         }
         finally {
             if(!(result_type.equals(""))) {
-                System.out.println("It is recommended to rename the mif file before making further changes to it.");
                 try {
                     Runtime.getRuntime().exec("rm color-Greyscale.txt");
                     System.out.println("Do you want to delete the resized image?");

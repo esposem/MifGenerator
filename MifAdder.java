@@ -55,11 +55,11 @@ public class MifAdder {
     }
 
 
-    public void CreateNewFile(String[] toAdd) throws ArrayIndexOutOfBoundsException{
+    public void CreateNewFile(String[] toAdd, String name) throws ArrayIndexOutOfBoundsException{
         try{
 
             PrintWriter writer;
-            writer = new PrintWriter("MultipleImages.mif", "UTF-8");
+            writer = new PrintWriter(name+ ".mif", "UTF-8");
             int j = 0;
             while (!(oldword.get(j).equals("BEGIN"))){
                 writer.println(oldword.get(j));
