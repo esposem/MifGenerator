@@ -91,6 +91,8 @@ public class MifGenerator {
     public static void main(String[] args)
     {
         String result_type = "";
+        int w = 0;
+        int h = 0;
         String pwd = "";
         try {
             Process p = Runtime.getRuntime().exec("pwd");
@@ -115,6 +117,8 @@ public class MifGenerator {
 
                     int width = Integer.parseInt(word[1]);
                     int height = Integer.parseInt(word[2]);
+                    w = width;
+                    h = height;
                     result_type = additionalimg.getType();
                     if ((width != 0) && (height != 0)){
                         additionalimg.imageFormat(width,height);
@@ -155,6 +159,8 @@ public class MifGenerator {
 
                     int width = Integer.parseInt(args[1]);
                     int height = Integer.parseInt(args[2]);
+                    w = width;
+                    h = height;
                     int word = Integer.parseInt(args[3]);
                     int q_out = Integer.parseInt(args[4]);
                     LoadImg img = new LoadImg(pwd + "/" + args[0]);
@@ -253,6 +259,7 @@ public class MifGenerator {
             if(!(result_type.equals(""))) {
                 try {
                     Runtime.getRuntime().exec("rm color-Greyscale.txt");
+                    if ((w != 0) && (h != 0)){
                     System.out.println("Do you want to delete the resized image?");
                     BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
                     String s = bufferRead.readLine();
@@ -261,6 +268,7 @@ public class MifGenerator {
                       System.out.println("Deleted.");
                         Runtime.getRuntime().exec("rm resized" + result_type.toUpperCase() + "." + result_type.toLowerCase());
                     }
+                  }
                 }
                 catch (IOException k){
                     System.out.println("Exception in deleting color-Greyscale.txt  or the resized image. Please delete it yourself ");
