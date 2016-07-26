@@ -1,5 +1,5 @@
-## MifGenerator
-# Created by Emanuele Giuseppe Esposito on 07/21/2016
+# MifGenerator
+## Created by Emanuele Giuseppe Esposito on 07/21/2016
 
 This tool creates an Altera .mif (Memory Initialization File ) from an image file (.png,jpeg,.jpg).
 More informations about .mif extension can be found [here](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
@@ -33,15 +33,6 @@ If you want to create a new mif file:
 
  6. Enjoy
 
-PS If you are really lazy, and don’t want to set every time these number, there is a bash script called run that you can edit in order to automatically get the size of the memory or get the same memory size and word parameters.
-
-To use it, first you have to give it the permission to run (chmod ) and then you run it writing ./run.sh (if you are in the path of where it is).
-
-It only requires as argument an image file. For example
-
-```./run.sh strawberry.png```
-
-The default values for this script are ```160 120 32768 8 ```(What I used to generate my 160 x 120 image to show in my 640 x 480 screen.)
 
 If you want to modify a mif file to add another image in its free memory words:
 
@@ -55,5 +46,17 @@ If you want to modify a mif file to add another image in its free memory words:
 
 
 
+ PS If you are really lazy, and don’t want to set every time these number, there is a bash script called run that you can edit in order to automatically get the size of the memory or get the same memory size and word parameters, or just insert the mif file to modify.
 
+ To use it, first you have to give it the permission to run (chmod ) and then you run it by writing ./run.sh (if you are in the path of where it is).
+
+ It only requires as argument an image file or mif file. For example
+
+ ```./run.sh strawberry.png```
+
+ The default values for this script are ```160 120 32768 8 ```(What I used to generate my 160 x 120 image to show in my 640 x 480 screen.)
+
+
+
+Any help/correction of this code is appreciated. If you want to contact me, send me a mail.
 I am not responsible of any use you will do of this tool.
