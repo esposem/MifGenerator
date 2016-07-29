@@ -3,7 +3,13 @@
 
 This tool creates an Altera .mif (Memory Initialization File ) from an image file (.png,jpeg,.jpg).
 
-The image will be converted in grayscale therefore will be displayed in grayscale on the screen.
+### Features :
+- Resize the image
+- Choice on deleting the resized image
+- Edit a mif file
+- Choice to get the image in grayscale or colors (Not yet implemented).
+
+Right now, the image will be converted in grayscale therefore will be displayed in grayscale on the screen.
 
 More informations about .mif extension can be found [here](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
 
@@ -38,6 +44,8 @@ If you want to create a new mif file:
 
 
 If you want to modify a mif file to add another image in its free memory words :
+
+Make sure you have the free space declared in the following way : ```[2900..3000] : 0``` where 0 can be any number.
 
  1. go to step 1 and 2
 
