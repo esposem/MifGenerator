@@ -2,6 +2,9 @@
 ## Created by Emanuele Giuseppe Esposito on 07/21/2016
 
 This tool creates an Altera .mif (Memory Initialization File ) from an image file (.png,jpeg,.jpg).
+
+The image will be converted in grayscale therefore will be displayed in grayscale on the screen.
+
 More informations about .mif extension can be found [here](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
 
 [http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
@@ -34,7 +37,7 @@ If you want to create a new mif file:
  6. Enjoy
 
 
-If you want to modify a mif file to add another image in its free memory words:
+If you want to modify a mif file to add another image in its free memory words :
 
  1. go to step 1 and 2
 
@@ -43,7 +46,7 @@ If you want to modify a mif file to add another image in its free memory words:
  3. Then you will be asked what image do you want to insert and on which size
 
  4. Insert a name for the resulting mif file
- 
+
  5.Enjoy the resulting mif file
 
 
@@ -54,7 +57,9 @@ If you want to modify a mif file to add another image in its free memory words:
 
  It only requires as argument an image file or mif file. For example
 
- ```./run.sh strawberry.png```
+ ```./run.sh EXAMPLE/linux_penguin.png```
+
+ As always, returns the mif file in the folder where the script is (MifGenerator)
 
  The default values for this script are ```160 120 32768 8 ```(What I used to generate my 160 x 120 image to show in my 640 x 480 screen.)
 

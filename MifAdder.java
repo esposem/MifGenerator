@@ -41,7 +41,7 @@ public class MifAdder {
                 if ((line.length() > 14) && (line.substring(0,13).equals("-- Image used"))){
                     line += " " + imagename;
                 }
-                    oldword.add(line);
+                oldword.add(line);
 
             }
         }
@@ -81,7 +81,7 @@ public class MifAdder {
                     k ++;
                 }
                 if (oldmifsize < MEM_SIZE) {
-                  writer.println("--finished");
+                    writer.println("--finished");
                     oldmifsize++;
                     writer.println("[" + oldmifsize + ".." + (MEM_SIZE - 1) + "] : " + 0 + ";");
                     System.out.println("You still have "+ (MEM_SIZE - oldmifsize) + " free words!");
@@ -96,11 +96,11 @@ public class MifAdder {
 
 
 
-    }
+        }
         catch(IOException e){
-        System.out.println("Error creating the mif file ");
-        System.out.println("Error : " + e);
-    }
+            System.out.println("Error creating the mif file ");
+            System.out.println("Error : " + e);
+        }
     }
 
 }

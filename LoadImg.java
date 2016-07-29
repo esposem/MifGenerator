@@ -12,11 +12,10 @@ public class LoadImg
     private BufferedImage image;
     private int imgtype;
 
-    public LoadImg(String path)
+    public LoadImg(String path) throws  IOException, ExceptionInInitializerError
     {
-        try
-        {
             image = ImageIO.read(new File(path));
+
 
             int len = path.length();
             char[] chararray = path.toCharArray();
@@ -28,14 +27,9 @@ public class LoadImg
                 type = path.substring(len-4);
             }
             else {
-                throw new Exception();
+                throw new ExceptionInInitializerError("Extension");
             }
             imgtype = image.getType() == 0? BufferedImage.TYPE_INT_ARGB : image.getType();
-        }
-        catch (Exception e)
-        {
-
-        }
 
     }
     public int getWidth(){
