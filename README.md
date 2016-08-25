@@ -58,7 +58,7 @@ The file generated can be read from any text editor, and  will have as address r
 
 
 
-PS If you are really lazy, and don’t want to set every time these number, there is a bash script called run that you can edit in order to automatically get the size of the memory or get the same memory size and word parameters, or just insert the mif file to modify.
+P.S. If you are really lazy, and don’t want to set every time these number, there is a bash script called ```run.sh``` that you can edit in order to automatically get the size of the memory or get the same memory size and word parameters, or just insert the mif file to modify.
 
 To use it, first you have to give it the permission to run (chmod ) and then you run it by writing ./run.sh (if you are in the path of where it is).
 
