@@ -13,8 +13,6 @@ This tool creates an Altera .mif (Memory Initialization File ) from an image fil
 
 More informations about .mif extension can be found [here](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
 
-[http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm](http://quartushelp.altera.com/15.0/mergedProjects/reference/glossary/def_mif.htm)
-
 The file generated can be read from any text editor, and  will have as address radix and data radix UNS.
 
 ###HOW TO RUN.
