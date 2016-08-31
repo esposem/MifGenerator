@@ -1,9 +1,15 @@
+// Created by Emanuele Giuseppe Esposito
+
 import java.io.*;
 
-public class RuntimeExec {
+// This is a test class. To run it, write in the terminal java TestClass
+// It has its own main method. This class tests the output with some possible
+// wrong input parameter, to see if handles all the error correctly.
+
+public class TestClass {
     public void Test1() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             Process proc = rt.exec("java MifGenerator lin.png");
@@ -26,7 +32,7 @@ public class RuntimeExec {
     }
     public void Test2() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = ("java MifGenerator lin 9 9 ");
@@ -50,7 +56,7 @@ public class RuntimeExec {
     }
     public void Test8() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = ("java MifGenerator lin 9 9  32000 8");
@@ -74,7 +80,7 @@ public class RuntimeExec {
     }
     public void Test3() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = ("java MifGenerator lin.png ciao 90");
@@ -99,7 +105,7 @@ public class RuntimeExec {
 
     public void Test9() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = ("java MifGenerator lin.png ciao 90 32000 8");
@@ -123,7 +129,7 @@ public class RuntimeExec {
     }
     public void Test4() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = ("java MifGenerator lin.png 90 ciao");
@@ -147,7 +153,7 @@ public class RuntimeExec {
     }
     public void Test5() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = "java MifGenerator 30 32 00 299 32 ";
@@ -171,7 +177,7 @@ public class RuntimeExec {
     }
     public void Test6() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = "java MifGenerator lin.png 160 120 0 500";
@@ -195,7 +201,7 @@ public class RuntimeExec {
     }
     public void Test7() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = "java MifGenerator lin.png 160 120 cuqi 599";
@@ -219,7 +225,7 @@ public class RuntimeExec {
     }
     public void Test10() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = "java MifGenerator lin.png 160 120 32000 0";
@@ -244,7 +250,7 @@ public class RuntimeExec {
     }
     public void Test11() {
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         try {
             StreamWrapper error, output;
             String message = "java MifGenerator lin.png 160 120 32000 cioa";
@@ -308,7 +314,7 @@ public class RuntimeExec {
             Runtime.getRuntime().exec("javac MifGenerator.java");
         } catch(Exception e) {}
         Runtime rt = Runtime.getRuntime();
-        RuntimeExec rte = new RuntimeExec();
+        TestClass rte = new TestClass();
         StreamWrapper error, output;
         System.out.println("Test 1");
         rte.Test1();

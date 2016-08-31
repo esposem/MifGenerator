@@ -1,10 +1,17 @@
-import java.awt.*;
+// Created by Emanuele Giuseppe Esposito
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.Graphics2D;
 import java.io.PrintWriter;
+
+// This class Loads an image in the specified path and reads all the pixels on it.
+// It creates a file called color-Greyscale.txt with all these values that will be
+// firstly read and then deleted by the program. I used a file instad of an array in
+// case somebody needs these value (to keep them, delete the rm color-Greyscale command
+// in the MifGenerator line 132)
 
 public class LoadImg
 {

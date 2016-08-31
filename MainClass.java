@@ -1,11 +1,11 @@
-import java.io.BufferedReader;
+// Created by Emanuele Giuseppe Esposito
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * Created by Emanuele on 28/07/16.
- */
+// Additional class that contains all methods and cases required by the MifGenerator main method.
+
 public class MainClass {
     private String result_type = "";
     private int w = 0;

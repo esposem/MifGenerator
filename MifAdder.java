@@ -1,9 +1,12 @@
+// Created by Emanuele Giuseppe Esposito
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// This class takes an already created mif file and adds new informations.
 
 public class MifAdder {
 

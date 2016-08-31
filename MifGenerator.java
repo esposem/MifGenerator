@@ -1,5 +1,8 @@
-import java.io.*;
+// Created by Emanuele Giuseppe Esposito
+
 import java.util.Scanner;
+
+// Principal Class. Here there is the main. MifGenerator creates the .mif file.
 
 public class MifGenerator {
     private String[] words;
