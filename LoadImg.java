@@ -6,6 +6,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.Graphics2D;
 import java.io.PrintWriter;
+import java.awt.Color;
 
 // This class Loads an image in the specified path and reads all the pixels on it.
 // It creates a file called color-Greyscale.txt with all these values that will be

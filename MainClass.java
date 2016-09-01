@@ -2,6 +2,7 @@
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 // Additional class that contains all methods and cases required by the MifGenerator main method.

@@ -1,5 +1,5 @@
 // Created by Emanuele Giuseppe Esposito
-
+import java.io.*;
 import java.util.Scanner;
 
 // Principal Class. Here there is the main. MifGenerator creates the .mif file.
