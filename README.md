@@ -31,23 +31,25 @@ The file will be generated in EXAMPLE folder
 
  2. With your terminal, go to the folder path
 
- 3. Write ```java MifGenerator image_name.extension image_width image_height number_word q-output```
+ 3. Compile the files by writing ```javac MifGenerator.java``` 
 
- 4. If you do not understand these parameter, you can see them in Quartus 2 by going on Tools -> MegaWizard Plug-In Manager
+ 4. Write ```java MifGenerator image_name.extension image_width image_height number_word q-output```
+
+ 5. If you do not understand these parameter, you can see them in Quartus 2 by going on Tools -> MegaWizard Plug-In Manager
     -> Next (choose your options) -> Next (choose your megafunction and give a name to the ram/rom)  -> (here).
     If you forget the order or not sure on what to insert, you can write (going with the terminal in the folder path)
     ```java MifGenerator -help```
 
- 5. The output will be a file generated in the loaded image folder with called the same name of the image + .mif 
+ 6. The output will be a file generated in the loaded image folder with called the same name of the image + .mif 
 
- 6. Enjoy
+ 7. Enjoy
 
 
 **If you want to modify a mif file to add another image in its free memory words :**
 
  0. Make sure you have the free space declared in the following way : ```[2900..3000] : 0``` where 0 can be any number.
 
- 1. Go to step 1 and 2 of the previous section
+ 1. Go to step 1, 2 and 3 of the previous section
 
  2. Write ```java mif_file_name.mif``` (this is your mif file).
 
